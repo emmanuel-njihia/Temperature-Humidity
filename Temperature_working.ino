@@ -9,7 +9,7 @@
 //Declare DHT object:
 DHT dht(DHTPIN, DHTTYPE);
 //Intialize the sensor.
-int dt=2000; //2 seconds
+int dt=2000; //3 seconds
 
 
 
