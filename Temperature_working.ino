@@ -14,14 +14,14 @@ int dt=2000; //3 seconds
 
 
 void setup (){
-  Serial.begin(9600); 
+  Serial.begin(115200); 
   dht.begin();
     pinMode(buzzPin,OUTPUT);
 }
 
 void loop (){
 // delay(300000);
- delay(1000);
+ delay(2 seconds);
 //read humidity
 float humi = dht.readHumidity();
 //read temperature as Celsius
@@ -38,7 +38,7 @@ float tempF = dht.readTemperature(true);
     digitalWrite(buzzPin, LOW);
   }
 
-//check if any reads failed
+//check if any leads failed
 if (isnan(humi) || isnan(tempC) || isnan(tempF)){
   Serial.println("Failed to read from DHT sensor!");
 
